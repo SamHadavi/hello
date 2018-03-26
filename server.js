@@ -2,6 +2,8 @@ const express = require('express');
 const hbs = require('hbs');
 var fs = require('fs');
 
+const port = process.env.PORT || 8080;
+
 var app = express();
 
 hbs.registerPartials(__dirname + '/views')
@@ -59,6 +61,6 @@ app.get('/about', (request, response) => {
 	});
 });
 
-app.listen(8080, () => {
-	console.log('server ready at 8080');
+app.listen(port, () => {
+	console.log('Server is farting at post ${port}');
 });
