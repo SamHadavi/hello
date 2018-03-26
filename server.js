@@ -42,7 +42,8 @@ app.get('/', (request, response) => {
 			'British Columbia Institude of Technology',
 			'CIT',
 			'2B'
-				]
+				],
+		ambitions: 'none'
 	})
 });
 
@@ -62,5 +63,5 @@ app.get('/about', (request, response) => {
 });
 
 app.listen(port, () => {
-	console.log('Server is farting at post ${port}');
+	console.log('Server of port ${port} wants to punch you');
 });
