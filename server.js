@@ -24,7 +24,7 @@ app.use((request, response, next) => {
 	var log = '${time}: ${request.method} ${request.url}';
 	fs.appendFile('server.log', log + '\n', (error) => {
 		if (error) {
-			console.log('Unable to log message');
+			console.log('Unable t log message');
 		}
 	});
 	next();
